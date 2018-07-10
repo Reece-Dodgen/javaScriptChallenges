@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>rainbow_1</title>
+</head>
+<style>
+    div{
+        width: 100%;
+        height: 60px;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <div id="one" onclick="one">Red</div>
+    <div id="two" onclick="two">Yellow</div>
+    <div id="three" onclick="three">Orange</div>
+    <div id="four" onclick="four">Green</div>
+    <div id="five" onclick="five">Blue</div>
+    <div id="six" onclick="six">Indigo</div>
+    <div id="seven" onclick="seven">Violet</div>
+
+
+
+
+    <script>
+      var rainbow =["red", "yellow", "orange", "green", "blue",
+      "indigo", "violet"];
+      console.log(rainbow);
+
+      one.onclick = function(){
+          var one = document.getElementById('one');
+          one.style.backgroundColor = "red";
+      }
+
+      two.onclick = function(){
+          var two = document.getElementById('two');
+          two.style.backgroundColor = "yellow";
+      }
+
+      three.onclick = function(){
+          var three = document.getElementById('three');
+          three.style.backgroundColor = "orange";
+      }
+
+      four.onclick = function(){
+          var four = document.getElementById('four');
+          four.style.backgroundColor = "green";
+      }
+
+      five.onclick = function(){
+          var five = document.getElementById('five');
+          five.style.backgroundColor = "blue";
+      }
+
+      six.onclick = function(){
+          var six = document.getElementById('six');
+          six.style.backgroundColor = "indigo";
+      }
+
+      seven.onclick = function(){
+          var seven = document.getElementById('seven');
+          seven.style.backgroundColor = "violet";
+      }
+
+    </script>
+</body>
+</html>

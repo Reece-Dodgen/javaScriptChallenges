@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>rainbow_2</title>
+    <style>
+        div{
+            width: 700px;
+            height: 60px;
+            text-align: center;
+            margin-left: 18%;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="container">   
+        <div id="red">red</div>
+        <div id="yellow">yellow</div>
+        <div id="orange">orange</div>
+        <div id="green">green</div>
+        <div id="blue">blue</div>
+        <div id="indigo">indigo</div>
+        <div id="violet">violet</div> 
+    </div>
+
+
+
+
+    <script>
+      var rainbow =["red", "yellow", "orange", "green", "blue",
+      "indigo", "violet"];
+      console.log(rainbow);
+      for (let index = 0; index < rainbow.length; index++) {
+          var color=document.getElementById(rainbow[index]+"");
+          color.style.backgroundColor=rainbow[index];   
+      }
+    </script>
+</body>
+</html>

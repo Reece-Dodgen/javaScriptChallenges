@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>javaScript || danceForYourMoney</title>
+
+</head>
+
+<body>
+    <h1>Dance for your money</h1>
+
+    <div>
+        <input type="text" name="" value="enter pin?" id="get">
+        <button onclick="dance()">Submit Here</button>
+    </div>
+
+    <br>
+    
+    <ol id="output">
+
+
+    </ol>
+
+
+    <script>
+
+
+        function dance() {
+
+            var output = document.getElementById('output');
+
+            var danceMoves = ['duggy', 'twerk', 'shimmy', 'dab', 'stomp', 'salsa', 'jazz', 'ball-room', 'two-step', 'tango'];
+            output.innerHTML = '';
+
+            var get = document.getElementById('get').value;
+            if (get.length == 4) {
+                for (let i = 0; i < get.length; i++) {
+                    output.innerHTML += '<li>' + danceMoves[get.charAt(i)] + '</li>';
+                }
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

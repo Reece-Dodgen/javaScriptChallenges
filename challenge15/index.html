@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>javaScript || Character_Count</title>
+    <style>
+        #Box{
+          text-align: center;
+ 
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="Box">
+        <h2>Add your words here</h2>
+        <textarea id="area" rows="10" cols="40"></textarea>
+        <br>
+        <h2>Then see the magic happen</h2>
+        <h3>Character count: <span id="count_text"></span></h3>
+        <br>
+
+    </div>
+
+    <script>
+        
+        var area = document.getElementById("area");
+        area.addEventListener("keyup", checkInput)
+        function checkInput() {
+            var character = document.getElementById("area").value;
+            var count_text = document.getElementById("count_text");
+            count_text.innerHTML = character.length;
+        }
+    </script>
+</body>
+</html>

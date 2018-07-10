@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>javaScript || Disemvowel_Trolls</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+
+    <div style="text-align: center;margin-top: 10%">
+
+        <h2>This is the Disemvowel Troll Challenge.</h2>
+        <h4>Add your word and see the change</h4>
+
+        <textarea id="textarea" rows="5" cols="30" placeholder="Enter your word or phrase here"></textarea>
+        <br>
+        <button id="submit">Disemvowel</button>
+        <h3 id="text"></h3>
+         
+        <h2 id="text"></h2>
+    </div>
+
+    <script>
+        document.getElementById("submit").addEventListener('click', disemvowel);
+        function disemvowel() {
+            var textArea = document.getElementById("textarea").value;
+            console.log(textArea);
+            textArea = textArea.split(/\a|\A|\e|\E|\i|\I|\o|\O|\u|\U/).join("");
+            console.log(textArea);
+            document.getElementById("text").innerHTML = textArea;
+            
+        }
+    </script>
+    
+</body>

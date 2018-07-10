@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>age_restriction</title>
+    <style>
+        body{
+            text-align: center;
+            background-color: black;
+            color: antiquewhite;
+            margin-top: 10%;
+        }
+        button{
+            width: 200px;
+            height: 30;
+            color: black;
+            background-color: blueviolet;
+            font-size: 20px;
+            border-radius: 15px;
+        }
+        input{
+            width: 300px;
+            height: 20px;
+            background-color: aqua;
+            color: black;
+            border-radius: 13px;
+            text-align: center;
+        }
+    </style>
+</head>
+    
+<body>
+        <div>
+            <input type="number" name="number" value="" id="age"><br><br>
+        
+            <button type="button" id="button" name="button" onclick=testAge()>Submit</button>
+        </div>
+            
+        <div id="display"></div>
+        
+
+    <script>
+       //get the age (input value) with js
+       
+
+        //write an if else statement checking if the age is less than 13
+        alert("Enter age in provided space");
+        function testAge(){
+            var ageField = document.getElementById('age')
+            var age = ageField.value;
+            var outputDiv = document.getElementById('display')
+
+            if(Number (age) <=6){
+                outputDiv.innerHTML = "Go away you baby!";
+            }
+            else if(age <=13){
+                outputDiv.innerHTML = "You can go on this site!";
+                //display div must show a text such as "You are too young to use the internet"
+            }
+            else if(age <=16){
+                outputDiv.innerHTML = "You under 16!";
+            }
+            else if(age <=18){
+                outputDiv.innerHTML = "Finally 18!";
+            }
+            else if(age <=21){
+                outputDiv.innerHTML = "You an adult now!";
+            }
+            else if(age <=29&&age>=21){
+                outputDiv.innerHTML = "Go find a job!";
+            }
+            else if(age >=30){
+                outputDiv.innerHTML = "Welcome to retirement!";
+            }
+
+        }
+        
+
+        //check for the following ages 6, 13, 16, 18, 21, 23, 30+ 
+    </script>
+</body>
+</html>

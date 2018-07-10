@@ -1,0 +1,58 @@
+.shell {
+    position: relative;
+    line-height: 1; 
+}
+
+    .shell span {
+      position: absolute;
+      left: 3px;
+      top: 2px;
+      color: red;
+      pointer-events: none;
+      z-index: -1; 
+    }
+
+      .shell span i {
+        /* any of these 3 will work */
+        color: transparent;
+        opacity: 0;
+        visibility: hidden; 
+    }
+  
+  input.masked,
+  .shell span {
+    font-size: 16px;
+    font-family: monospace;
+    padding-right: 10px;
+    background-color: transparent;
+    text-transform: uppercase; 
+}
+  
+  
+  .amex:after,
+  .visa:after,
+  .mastercard:after,
+  .discover:after {
+    position: absolute;
+    right: 0;
+    background: black;
+    color: white;
+    padding: 0 5px; 
+}
+  
+  .amex:after {
+    content: 'A'; 
+}
+  
+  .visa:after {
+    content: 'V'; 
+}
+  
+  .mastercard:after {
+    content: 'M'; 
+}
+  
+  .discover:after {
+    content: 'D'; 
+}
+  
